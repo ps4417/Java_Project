@@ -10,7 +10,7 @@ public class Project01_A {
 
 	public static void main(String[] args) {
 		// Object(BookDTO) -> JSON(String)
-		BookDTO dto = new BookDTO("ÀÚ¹Ù",21000,"¿¡ÀÌÄÜ",670);
+		BookDTO dto = new BookDTO("ìë°”",21000,"ì—ì´ë¹„",670);
 		Gson g = new Gson();
 		String json = g.toJson(dto);
 		System.out.println(json);
@@ -21,9 +21,9 @@ public class Project01_A {
 		
 		// Object(List<BookDTO>) -> JSON(String) : [{  },{  } ....]
 		List<BookDTO> lst = new ArrayList<BookDTO>();
-		lst.add(new BookDTO("ÀÚ¹Ù1",21000,"¿¡ÀÌÄÜ1",570));
-		lst.add(new BookDTO("ÀÚ¹Ù2",31000,"¿¡ÀÌÄÜ2",670));
-		lst.add(new BookDTO("ÀÚ¹Ù3",11000,"¿¡ÀÌÄÜ3",370));
+		lst.add(new BookDTO("ìë°”1",21000,"ì—ì´ë¹„1",570));
+		lst.add(new BookDTO("ìë°”2",31000,"ì—ì´ë¹„2",670));
+		lst.add(new BookDTO("ìë°”3",11000,"ì—ì´ë¹„3",370));
 		
 		String lstJson = g.toJson(lst);
 		System.out.println(lstJson);
